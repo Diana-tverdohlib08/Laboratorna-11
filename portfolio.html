@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Портфоліо — Твердохліб Діана</title>
+
+<style>
+    body {
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        color: #222;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    table {
+        width: 70%;
+        margin: 50px auto;
+        border-collapse: collapse;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    td {
+        padding: 15px;
+        vertical-align: middle;
+    }
+
+    tr:first-child {
+        background-color: gray;
+        color: white;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    tr:last-child {
+        background-color: gray;
+        color: white;
+    }
+
+    h2 {
+        color: #444;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .project {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+        padding: 15px;
+        width: 250px;
+        transition: transform 0.3s;
+    }
+
+    .project:hover {
+        transform: scale(1.05);
+    }
+
+    .project img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .project p {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+<body>
+<table>
+    <tr height="85px">
+        <td><b>Diana-company.IT</b></td>
+        <td>
+            Меню
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="rezume.html">Резюме</a></li>
+                <li><a href="portfolio.html">Портфоліо</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="form-contact.html" target="_blank">Зворотній зв’язок</a></li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <h2>МОЇ РОБОТИ</h2>
+
+            <div class="projects">
+                <div class="project">
+                    <a href="#" target="_blank">
+                        <img src="figma-layout.jpg" alt="Макет у Figma">
+                    </a>
+                    <p>Макет релами смартфону</p>
+                </div>
+
+                <div class="project">
+                    <a href="https://diana-sofia.jimdosite.com" target="_blank">
+                        <img src="landing-preview.jpg" alt="Landing Page у Jimdo">
+                    </a>
+                    <p>Landing Page</p>
+                </div>
+
+                <div class="project">
+                    <a href="https://tverdohlib-italy.netlify.app/" target="_blank">
+                        <img src="italy-site.jpg" alt="Сайт про Італію">
+                    </a>
+                    <p>Сайт про Італію</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr height="100px">
+        <td><b>Соціальні мережі:</b></td>
+        <td>Instagram: <a href="https://www.instagram.com/_fortuna.001_/" target="_blank">@_fortuna.001_</a></td>
+    </tr>
+</table>
+</body>
+</html>
